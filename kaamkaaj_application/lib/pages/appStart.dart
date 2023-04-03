@@ -41,7 +41,9 @@ class _AppStartState extends State<AppStart> {
                       style: TextStyle(fontSize: 20),
                     )),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context,'/login');
+                  },
                   child: const Text(
                     "login",
                     style: TextStyle(fontSize: 20),
