@@ -3,8 +3,8 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:email_validator/email_validator.dart';
 import '../services/addUser.dart';
+import 'package:email_validator/email_validator.dart';
 
 class SihnUp extends StatefulWidget {
   const SihnUp({super.key});
