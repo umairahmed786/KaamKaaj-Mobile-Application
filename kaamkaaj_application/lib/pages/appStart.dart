@@ -35,14 +35,16 @@ class _AppStartState extends State<AppStart> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                    Navigator.pushNamed(context,'/signup');
+                    },
                     child: const Text(
                       "Sign Up",
                       style: TextStyle(fontSize: 20),
                     )),
                 ElevatedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context,'/login');
+                    Navigator.pushNamed(context, '/login');
                   },
                   child: const Text(
                     "login",
