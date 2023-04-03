@@ -27,7 +27,15 @@ class _LoginPageState extends State<LoginPage> {
       validationError = "";
       passController.clear();
       emailController.clear();
+
       //navigate user to dashboard
+      // if (user == "admin") {
+      //   Navigator.pushNamed(context, '/adminDashboard');
+      // } else if (user == "worker") {
+      //   Navigator.pushNamed(context, '/workerDashboard');
+      // } else {
+      //   Navigator.pushNamed(context, '/clientDashboard');
+      // }
     }
   }
 
@@ -36,7 +44,9 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
         appBar: AppBar(
             leading: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, '/');
+              },
               icon: const Icon(Icons.arrow_back),
               color: primaryBlack,
             ),
