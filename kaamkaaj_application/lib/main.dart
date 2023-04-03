@@ -32,9 +32,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'KaamKaaj Mobile App',
         initialRoute: '/',
+        debugShowCheckedModeBanner: false,
+        color: Colors.white,
         routes: {
-          '/': (context) => AppStart(title: "Kaam Kaaj"),
-          '/login': (context) => LoginPage(),
+          "/": (context) => UserProfile(),
+          // '/': (context) => AppStart(title: "Kaam Kaaj"),
+          // '/login': (context) => LoginPage(),
           // '/login':(context) =>
           // '/second': (context) => const SecondScreen(),
         });

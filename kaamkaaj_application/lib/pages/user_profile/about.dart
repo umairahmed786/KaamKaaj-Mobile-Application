@@ -124,27 +124,31 @@ class About extends StatelessWidget {
                 ),
               ]),
         ),
-        ElevatedButton(
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.green[300]),
-            onPressed: () {},
-            child: Text(
-              "Enable Profile",
-              style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-            )),
-        ElevatedButton(
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.red[300]),
-            onPressed: () {},
-            child: Text(
-              "Disable Profile",
-              style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-            )),
-        ElevatedButton(
-            style: ElevatedButton.styleFrom(backgroundColor: Colors.green[300]),
-            onPressed: () {},
-            child: Text(
-              "Send Proposal",
-              style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-            )),
+        // ****************************For enabling profile Button
+        // ElevatedButton(
+        //     style: ElevatedButton.styleFrom(backgroundColor: Colors.green[300]),
+        //     onPressed: () {},
+        //     child: Text(
+        //       "Enable Profile",
+        //       style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+        //     )),
+        // ****************************For disabling profile Button
+        // ElevatedButton(
+        //     style: ElevatedButton.styleFrom(backgroundColor: Colors.red[300]),
+        //     onPressed: () {},
+        //     child: Text(
+        //       "Disable Profile",
+        //       style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+        //     )),
+        // ****************************For sending proposal Button
+        // ElevatedButton(
+        //     style: ElevatedButton.styleFrom(backgroundColor: Colors.green[300]),
+        //     onPressed: () {},
+        //     child: Text(
+        //       "Send Proposal",
+        //       style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+        //     )),
+        // *****************************For saving the changes in name button
         ElevatedButton(
             onPressed: () {},
             child: Text(

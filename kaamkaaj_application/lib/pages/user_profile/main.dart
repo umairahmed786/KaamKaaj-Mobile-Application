@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:kaamkaaj_application/user_profile/about.dart';
-import 'package:kaamkaaj_application/user_profile/portfolio.dart';
-import 'package:scroll_navigation/scroll_navigation.dart';
+import 'package:kaamkaaj_application/pages/user_profile/about.dart';
+import 'package:kaamkaaj_application/pages/user_profile/portfolio.dart';
 
 class UserProfile extends StatefulWidget {
   const UserProfile({super.key});
@@ -16,10 +15,6 @@ class _UserProfileState extends State<UserProfile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(
-      //   shadowColor: Colors.white,
-      //   backgroundColor: Colors.white,
-      // ),
       body: SingleChildScrollView(
         child: Container(
           margin: EdgeInsets.only(top: 30),
@@ -67,6 +62,8 @@ class _UserProfileState extends State<UserProfile> {
                 children: [
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.white,
+                      elevation: 1,
                       primary: Colors.white,
                     ),
                     onPressed: () {
@@ -78,8 +75,9 @@ class _UserProfileState extends State<UserProfile> {
                   ),
                   ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.white,
-                      ),
+                          elevation: 1,
+                          primary: Colors.white,
+                          shadowColor: Colors.white),
                       onPressed: () {
                         setState(() {
                           currentTab = 'Portfolio';
@@ -90,6 +88,11 @@ class _UserProfileState extends State<UserProfile> {
                         style: TextStyle(color: Colors.black),
                       )),
                 ],
+              ),
+              Container(
+                margin: EdgeInsets.only(top: 10),
+                height: 0.1,
+                color: Colors.black,
               ),
               currentTab == 'About' ? About() : Portfolio(),
             ],
