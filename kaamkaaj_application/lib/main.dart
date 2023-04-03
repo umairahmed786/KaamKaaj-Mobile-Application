@@ -29,14 +29,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'KaamKaaj Mobile App',
-      initialRoute: '/',
-      routes: {
-        '/': (context) =>  AppStart(title: "Kaam Kaaj"),
-        '/login':(context) => LoginPage(),
-        // '/login':(context) => 
-        // '/second': (context) => const SecondScreen(),
-      }
-    );
+        theme: ThemeData(
+          primarySwatch: primaryBlack,
+        ),
+        title: 'KaamKaaj Mobile App',
+        initialRoute: '/',
+        routes: {
+          '/': (context) => const AppStart(title: "Kaam Kaaj"),
+          '/login': (context) => const LoginPage(),
+          // '/login':(context) =>
+          // '/second': (context) => const SecondScreen(),
+        });
   }
 }
