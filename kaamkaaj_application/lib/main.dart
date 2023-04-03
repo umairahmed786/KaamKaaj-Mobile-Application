@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:kaamkaaj_application/pages/appStart.dart';
-// -----------
 import 'UserSite/customerLandingPage.dart';
+import './pages/appStart.dart';
+import './pages/login.dart';
+import './pages/signup.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -33,10 +36,14 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: primaryBlack,
       ),
-      // home: const AppStart(title: 'Kaam Kaaj'),
-      // -------
+  
+      initialRoute: '/',
+      routes: {
+        '/': (context) =>  AppStart(title: "Kaam Kaaj"),
+        '/login':(context) => LoginPage(),
+        '/signup':(context) => SihnUp(),
 
-      home: CustomerLandingPage(),
+      }
     );
   }
 }
