@@ -5,7 +5,6 @@ import './pages/appStart.dart';
 import './pages/login.dart';
 import './pages/signup.dart';
 
-
 void main() {
   runApp(const MyApp());
 }
@@ -32,18 +31,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'KaamKaaj Mobile App',
-      theme: ThemeData(
-        primarySwatch: primaryBlack,
-      ),
-  
-      initialRoute: '/',
-      routes: {
-        '/': (context) =>  AppStart(title: "Kaam Kaaj"),
-        '/login':(context) => LoginPage(),
-        '/signup':(context) => SihnUp(),
-
-      }
-    );
+        title: 'KaamKaaj Mobile App',
+        theme: ThemeData(
+          primarySwatch: primaryBlack,
+        ),
+        initialRoute: '/',
+        routes: {
+          '/': (context) => AppStart(title: "Kaam Kaaj"),
+          '/login': (context) => LoginPage(),
+          '/signup': (context) => SihnUp(),
+          '/customerlandingpage': (context) => CustomerLandingPage()
+        });
   }
 }
