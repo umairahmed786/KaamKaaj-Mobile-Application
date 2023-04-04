@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kaamkaaj_application/pages/appStart.dart';
+import 'UserSite/customerLandingPage.dart';
 import './pages/appStart.dart';
 import './pages/login.dart';
 import './pages/signup.dart';
@@ -31,12 +32,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'KaamKaaj Mobile App',
-        theme: ThemeData(primarySwatch: primaryBlack),
+        theme: ThemeData(
+          primarySwatch: primaryBlack,
+        ),
         initialRoute: '/',
         routes: {
           '/': (context) => const AppStart(title: "Kaam Kaaj"),
           '/login': (context) => const LoginPage(),
           '/signup': (context) => const SihnUp(),
+          '/customerlandingpage': (context) => CustomerLandingPage()
           // '/login':(context) =>
           // '/second': (context) => const SecondScreen(),
         });
