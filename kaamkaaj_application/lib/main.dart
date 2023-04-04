@@ -30,15 +30,15 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'KaamKaaj Mobile App',
-      initialRoute: '/',
-      routes: {
-        '/': (context) =>  AppStart(title: "Kaam Kaaj"),
-        '/login':(context) => LoginPage(),
-        '/signup':(context) => SihnUp(),
-        // '/login':(context) => 
-        // '/second': (context) => const SecondScreen(),
-      }
-    );
+        title: 'KaamKaaj Mobile App',
+        theme: ThemeData(primarySwatch: primaryBlack),
+        initialRoute: '/',
+        routes: {
+          '/': (context) => const AppStart(title: "Kaam Kaaj"),
+          '/login': (context) => const LoginPage(),
+          '/signup': (context) => const SihnUp(),
+          // '/login':(context) =>
+          // '/second': (context) => const SecondScreen(),
+        });
   }
 }

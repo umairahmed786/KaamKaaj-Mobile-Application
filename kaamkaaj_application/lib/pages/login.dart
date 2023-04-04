@@ -19,7 +19,7 @@ class _LoginPageState extends State<LoginPage> {
     var password = passController.text.toString();
 
     http.Response response = await http
-        .get(Uri.parse('http://192.168.1.9:8001/signin/$email/$password'));
+        .get(Uri.parse('http://10.5.124.54:8001/signin/$email/$password'));
 
     if (response.body.isEmpty) {
       validationError = "Incorrect Email or Password";

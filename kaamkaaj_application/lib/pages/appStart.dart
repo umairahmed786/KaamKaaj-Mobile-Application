@@ -34,21 +34,29 @@ class _AppStartState extends State<AppStart> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                ElevatedButton(
+                Container(
+                  width: 150,
+                  margin: const EdgeInsets.all(10),
+                  child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/signup');
+                      },
+                      child: const Text(
+                        "Sign Up",
+                        style: TextStyle(fontSize: 20),
+                      )),
+                ),
+                Container(
+                  width: 150,
+                  margin: const EdgeInsets.all(10),
+                  child: ElevatedButton(
                     onPressed: () {
-                    Navigator.pushNamed(context,'/signup');
+                      Navigator.pushNamed(context, '/login');
                     },
                     child: const Text(
-                      "Sign Up",
+                      "login",
                       style: TextStyle(fontSize: 20),
-                    )),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/login');
-                  },
-                  child: const Text(
-                    "login",
-                    style: TextStyle(fontSize: 20),
+                    ),
                   ),
                 )
               ],
